@@ -21,8 +21,7 @@ public interface LikeMapper {
 
     @Insert("insert into like(user_id,produce_id) values(user_id = #{user_id},produce_id=#{produce_id})")
    int insert(Like like);
-
-
+    
     @Update("updata like set user_id = #{user_id},produce_id=#{produce_id} where id=#{id}")
    void  updata(Like like);
 
