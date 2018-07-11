@@ -6,9 +6,11 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface UserMapper {
 
     @Select("select * from user ")
@@ -17,11 +19,11 @@ public interface UserMapper {
     @Select("select * from user where id=#{id}")
     User getUserById(Integer id);
 
-    @Insert("Insert into user(username,password,call_number) values(#{username},#{password},#{call_number})")
-    int insertByUser(User user);
+    @Insert("Insert into user(username,password,phone) values(#{username},#{password},#{phone})")
+    int insert(User user);
 
-    @Update("updata user set username=#{username},password=#{paaaword},call_number=#{call_number} where id=#{id}")
-    void updata(User user);
+    @Update("update user set username=#{username},password=#{password},phone=#{phone} where id=#{id}")
+    void update(User user);
 
     @Delete("delete from user where id = #{id}")
     void delete(Integer id);

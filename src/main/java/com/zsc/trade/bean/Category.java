@@ -2,7 +2,7 @@ package com.zsc.trade.bean;
 
 public class Category {
     private Integer id;
-    private String c_name;
+    private String cate_name;
 
     public Integer getId() {
         return id;
@@ -12,11 +12,11 @@ public class Category {
         this.id = id;
     }
 
-    public String getC_name() {
-        return c_name;
+    public String getCate_name() {
+        return cate_name;
     }
 
-    public void setC_name(String c_name) {
-        this.c_name = c_name;
+    public void setCate_name(String cate_name) {
+        this.cate_name = cate_name;
     }
 }

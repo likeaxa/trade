@@ -3,7 +3,7 @@ package com.zsc.trade.bean;
 public class Like {
     private Integer id;
     private Integer user_id;
-    private Integer produce_id;
+    private Integer product_id;
 
     public Integer getId() {
         return id;
@@ -21,11 +21,11 @@ public class Like {
         this.user_id = user_id;
     }
 
-    public Integer getProduce_id() {
-        return produce_id;
+    public Integer getProduct_id() {
+        return product_id;
     }
 
-    public void setProduce_id(Integer produce_id) {
-        this.produce_id = produce_id;
+    public void setProduct_id(Integer product_id) {
+        this.product_id = product_id;
     }
 }

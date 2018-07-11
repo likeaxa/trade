@@ -6,7 +6,7 @@ public class User {
 
     private String password;
 
-    private String call_number;
+    private String phone;
 
     public Integer getId() {
         return id;
@@ -32,11 +32,11 @@ public class User {
         this.password = password;
     }
 
-    public String getCall_number() {
-        return call_number;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setCall_number(String call_number) {
-        this.call_number = call_number;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

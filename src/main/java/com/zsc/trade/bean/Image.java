@@ -2,7 +2,7 @@ package com.zsc.trade.bean;
 
 public class Image {
     private Integer id;
-    private Integer p_id;
+    private Integer product_id;
     private Integer type;
 
     public Integer getId() {
@@ -13,12 +13,12 @@ public class Image {
         this.id = id;
     }
 
-    public Integer getP_id() {
-        return p_id;
+    public Integer getProduct_id() {
+        return product_id;
     }
 
-    public void setP_id(Integer p_id) {
-        this.p_id = p_id;
+    public void setProduct_id(Integer product_id) {
+        this.product_id = product_id;
     }
 
     public Integer getType() {
